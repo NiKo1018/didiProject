@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<title>新闻公告</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link href="css/mui.css" rel="stylesheet" />
+		<link href="css/hzl.css" rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1579511_9dg07hlcjkm.css"/>
 		<style type="text/css">
 			.mui-bar-nav.mui-bar .mui-icon {
@@ -94,7 +94,7 @@
 					<p class="second">2015年09月11日 15.50</p>
 				</div>
 				<div class="box2" >
-					<p class="text">查看详情</p>
+					<a class="text" href="new_details">查看详情</a>
 				</div>
 			</div>
 		</div>
@@ -107,7 +107,7 @@
 					<p class="second">2015年09月11日 15.50</p>
 				</div>
 				<div class="box2" >
-					<p class="text">查看详情</p>
+					<a class="text" href="new_details">查看详情</a>
 				</div>
 			</div>
 		</div>
@@ -120,7 +120,7 @@
 					<p class="second">2015年09月11日 15.50</p>
 				</div>
 				<div class="box2" >
-					<p class="text">查看详情</p>
+					<a class="text" href="new_details">查看详情</a>
 				</div>
 			</div>
 		</div>
@@ -133,14 +133,17 @@
 					<p class="second">2015年09月11日 15.50</p>
 				</div>
 				<div class="box2" >
-					<p class="text">查看详情</p>
+					<a class="text" href="new_details">查看详情</a>
 				</div>
 			</div>
 		</div>
 				
 		<script src="js/mui.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			// mui中屏蔽了点击事件，下面的代码表示不让它屏蔽点击事件
+					mui("body").on("tap","a",function(){
+						document.location.href = this.href;
+					})
 		</script>
 	</body>
 
