@@ -13,7 +13,7 @@
 	</script>
 		<style type="text/css">
 			.page{
-				margin: 50px ;	
+				margin-top: 80px ;	
 				text-align: center;
 			}
 	
@@ -27,14 +27,18 @@
 			color: #F7F7F7;
 		}
 		.text{
+			padding: center;
 			color: orange;
 		}
 		.box2{
-			margin: 7px auto;
+			margin: 50px auto;
 			background: #F7F7F7;
 			width: 100% auto;
 			height: 200px auto;
 			
+		}
+		.text1{
+			font-size: 15px;
 		}
 		</style>
 	</head>
@@ -42,17 +46,38 @@
 	<body>
 	<header class="mui-bar mui-bar-nav">
 		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="./personal_info.html"></a>
-		<h1 class="mui-title">账户余额</h1>
+		<h2 class="mui-title">账户余额</h2>
 	</header>
 	<div class="page">
 	<a class="text">
-		<h1>￥15000.00</h1>
+		<h2>￥15000<span class="text1">.00</span></h2>
 	</a>
 	</div>
 <div class="box2">
 	<button type="button" class="mui-btn mui-btn-blue mui-btn-block">申请提现</button>
 </div>
-	
+	<nav class="mui-bar mui-bar-tab">
+		<a class="mui-tab-item ">
+			<div class="iconfont icon-yemian-copy-copy"herf="./index.html"></div>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item">
+			<div class="iconfont icon-chuangyexiangmu" herf="./project_index.html"></div>
+			<span class="mui-tab-label">创业项目</span>
+		</a>
+		<a class="mui-tab-item">
+			<div class="iconfont icon-baomingliucheng"  herf="./sign.html"></div>
+			<div class="mui-tab-label">报名流程</div>
+		</a>
+		<a class="mui-tab-item">
+			<div class="iconfont icon-pingtai" herf="./platform_style.html"></div>
+			<span class="mui-tab-label">平台风采</span>
+		</a>
+		<a class="mui-tab-item">
+			<div class="iconfont icon-wodedangxuan" herf="./personal_info.html"></div>
+			<span class="mui-tab-label">我的滴滴</span>
+		</a>
+	</nav>
 	</body>
 
 </html>
