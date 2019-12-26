@@ -5,9 +5,26 @@
 		<meta charset="utf-8">
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link href="css/mui1.css" rel="stylesheet" />
+		<link href="css/yjw.css" rel="stylesheet" />
 		<link href="http://at.alicdn.com/t/font_1579511_9dg07hlcjkm.css" rel="stylesheet" />
+		<link href="http://at.alicdn.com/t/font_1580276_v29ppc3vokf.css" rel="stylesheet"/>
 		<style>
+			.one{
+				height: 100%;
+				height: 250px;
+				background:url(images/3.jpg);
+			}
+			.two{
+				width: 200px;
+				text-align: center;
+				margin: 0 auto;
+				padding-top: 100px;
+			}
+			.list{
+				padding: 10px 20px 10px;
+				margin-top: 20px;
+				
+			}
 			.mui-bar-nav{
 				background:#0062CC;
 			}
@@ -19,40 +36,60 @@
 			}
 		</style>
 	</head>
-
+	
 	<body>
 		<header class="mui-bar mui-bar-nav ">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">创业项目</h1>
+			<h1 class="mui-title">个人信息</h1>
 		</header>
-		<div style="padding: 50px 10px;">
-			<div id="segmentedControl" class="mui-segmented-control">
-				<a class="mui-control-item " href="project_index.html">钻石创业者</a>
-				<a class="mui-control-item" href="project_gold.html">金牌创业者</a>
-				<a class="mui-control-item mui-active" href="project_silver.html">银牌创业者</a>
+		<div class="one">
+			<div class="two">
+				<img src="images/2.png" />
+				<h4>王三</h4>
+				<a href=" ">退出登录</a>
 			</div>
 		</div>
-		<div class="content">
-			<img src="images/banner.jpg" height="200" width="400" alt="">
-			<p>服务名称</p>
-			<div class="mid">
-				<span class="one"><img src="images/yuan.png" width="84" height="84" alt=""></span>
-				<p class="p1">市场营销<br>学院</p>
-				<!-- <img src="./images/add.png" width="30" height="30" alt=""> -->
-				<span class="two"><img src="images/yuan.png" width="84" height="84" alt=""></span>
-				<span class="three"><img src="images/add.png" width="40" height="40" alt=""></span>
-				<p class="p2">工程项目运营<br>学院</p>
-				
-			</div>
-			<h4 class="text">提供以上两个学院的技术支持、资讯服务、课件学习等内容</h4>
+		<div class="list">
+			<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+								<span class="iconfont icon-zhuce"></span>
+								<span class="mui-tab-label">我的客户</span>
+						</a>
+					</li>
+			</ul>
 		</div>
-		<h4 class="text1">创业者享受的回报收益</h4>
-		<div class="foot">
-			<h4 class="t1">运营项目的业绩</h4>
-			<span class="foot_left"><img src="./images/six.png" width="130" height="130" alt=""></span>
-			<h4 class="t2">三年内：流水*99.5%</h4>
-			<span class="foot_left"><img src="./images/six.png" width="130" height="130" alt=""></span>
+		<div class="list">
+			<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+								<span class="iconfont icon-caiwu"></span>
+								<span class="mui-tab-label">我的余额</span>
+						</a>
+					</li>
+			</ul>
 		</div>
+		<div class="list">
+			<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+								<span class="iconfont icon-zhuce"></span>
+								<span class="mui-tab-label">注册客户</span>
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="list">
+			<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+								<span class="iconfont icon-xiugaimima"></span>
+								<span class="mui-tab-label">修改密码</span>
+						</a>
+					</li>
+			</ul>
+		</div>
+		<!--底部-->
 		<nav class="mui-bar mui-bar-tab">
 			<a class="mui-tab-item mui-active" href="index.html">
 				<div class="iconfont icon-yemian-copy-copy"></div>
@@ -84,5 +121,5 @@
 						})
 		</script>
 	</body>
-
+	
 </html>

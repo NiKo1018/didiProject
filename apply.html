@@ -9,7 +9,9 @@
 		<link href="css/mui.min.css" rel="stylesheet"/>
 		<link href="http://at.alicdn.com/t/font_1579511_9dg07hlcjkm.css" rel="stylesheet" />
 		<script type="text/javascript" charset="utf-8">
-		  	mui.init();
+		  mui("body").on("tap","a",function(){
+		  						document.location.href = this.href;
+		  					})
 		</script>
 		<style type="text/css">
 			.list{
