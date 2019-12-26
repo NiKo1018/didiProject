@@ -11,7 +11,7 @@
 
 	<body>
 		<header class="mui-bar mui-bar-nav">
-			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="personal_info.html"></a>
 			<h1 class="mui-title">客户管理</h1>
 		</header>
 		<div class="client">
@@ -77,31 +77,35 @@
 		
 		
 		
+		<!--底部-->
 		<nav class="mui-bar mui-bar-tab">
-				<a class="mui-tab-item mui-active">
-							<div class="iconfont icon-yemian-copy-copy"></div>
-							<span class="mui-tab-label">首页</span>
-				</a>
-				<a class="mui-tab-item">
-					<div class="iconfont icon-chuangyexiangmu"></div>
-					<span class="mui-tab-label">创业项目</span>
-				</a>
-				<a class="mui-tab-item">
-					<div class="iconfont icon-baomingliucheng"></div>
-					<div class="mui-tab-label">报名流程</div>
-				</a>
-				<a class="mui-tab-item">
-					<div class="iconfont icon-pingtai"></div>
-					<span class="mui-tab-label">平台风采</span>
-				</a>
-				<a class="mui-tab-item">
-					<div class="iconfont icon-wodedangxuan"></div>
-					<span class="mui-tab-label">我的滴滴</span>
-				</a>
+			<a class="mui-tab-item " href="index.html">
+				<div class="iconfont icon-yemian-copy-copy"></div>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="project_index.html">
+				<div class="iconfont icon-chuangyexiangmu"></div>
+				<span class="mui-tab-label">创业项目</span>
+			</a>
+			<a class="mui-tab-item" href="sign.html">
+				<div class="iconfont icon-baomingliucheng"></div>
+				<div class="mui-tab-label">报名流程</div>
+			</a>
+			<a class="mui-tab-item" href="platform_style.html">
+				<div class="iconfont icon-pingtai"></div>
+				<span class="mui-tab-label">平台风采</span>
+			</a>
+			<a class="mui-tab-item mui-active" href="personal_info.html">
+				<div class="iconfont icon-wodedangxuan"></div>
+				<span class="mui-tab-label">我的滴滴</span>
+			</a>
 		</nav>
-		<script src="js/mui.js"></script>
-		<script type="text/javascript">
-			mui.init()
+		<script type="text/javascript" charset="utf-8">
+		  	mui.init();
+			// mui中屏蔽了点击事件，下面的代码表示不让它屏蔽点击事件
+			mui("body").on("tap","a",function(){
+							document.location.href = this.href;
+						})
 		</script>
 		
 	</body>
